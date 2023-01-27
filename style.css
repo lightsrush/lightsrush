@@ -30,11 +30,25 @@ header #logo img {
   height: 64px;
 }
 header #social {
+  display: flex;
+  flex-flow: row;
   font-size: 28px;
 }
 header #social a {
   color: #fff;
-  padding-left: 16px;
+  margin-left: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+header #social a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #frame {
