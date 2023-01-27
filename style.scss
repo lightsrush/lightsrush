@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+  font-family: 'Outfit Flex';
+  src: url('assets/Outfit-VariableFont_wght.woff2') format('woff2') tech('variations'),
+  url('assets/Outfit-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 1000;
+}
 
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit Flex", sans-serif;
   overflow-x: hidden;
   background: #000;
 }
@@ -25,27 +30,44 @@ header {
     flex-grow: 1;
     padding: 0 64px;
   }
-
-  #links {
-    padding: 0 64px;
-    a {
-      color: #fff;
-      padding: 0 16px;
-    }
-  }
 }
 
 #frame {
   background-image: url("assets/frame-2.webp");
   background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-flow: column;
 
   #title {
-    position: absolute;
-    bottom: 64px;
-    left: 128px;
     font-size: 96px;
+    font-weight: 300;
     color: white;
+    align-self: end;
+    padding: 64px;
+    padding-top: 128px;
+    flex-grow: 1;
+  }
+
+  #links {
+    padding: 64px;
+    align-self: start;
+    display: flex;
+    flex-flow: column;
+
+    a {
+      color: #fff;
+      font-size: 64px;
+      font-weight: 100;
+      font-style: italic;
+      text-decoration: none;
+      transition: font-weight ease-out 300ms;
+    }
+
+    :hover {
+      font-weight: 320;
+    }
   }
 }
