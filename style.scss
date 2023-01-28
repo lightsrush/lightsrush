@@ -30,31 +30,6 @@ header {
     img { height: 64px; }
     flex-grow: 1;
   }
-
-  #social {
-    display: flex;
-    flex-flow: row;
-    font-size: 28px;
-
-    a {
-      color: #fff;
-      margin-left: 8px;
-      padding: 16px;
-      box-sizing: border-box;
-      border-radius: 32px;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-    }
-
-  }
 }
 
 #frame {
