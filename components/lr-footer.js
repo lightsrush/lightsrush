@@ -9,13 +9,13 @@ export class LrFooter extends LitElement {
         flex-flow: row;
         align-items: center;
         padding: 32px 64px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 200;
         color: #fff;
       }
 
       span {
-        padding-right: 8px;
+        padding-right: 6px;
       }
 
       #contact {
@@ -27,12 +27,11 @@ export class LrFooter extends LitElement {
 
       #copyright {
         padding-top: 8px;
-        font-size: 24px;
       }
       
       svg {
         fill: white;
-        width: 24px;
+        width: 20px;
       }
 
 
@@ -44,8 +43,8 @@ export class LrFooter extends LitElement {
       .social a {
         color: #fff;
         padding: 6px;
-        width: 38px;
-        height: 38px;
+        width: 34px;
+        height: 34px;
         border-radius: 32px;
         display: flex;
         align-items: center;

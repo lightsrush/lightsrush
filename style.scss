@@ -15,23 +15,6 @@ body {
   color: white;
 }
 
-header {
-  padding: 64px 64px 0 64px;
-  box-sizing: border-box;
-  align-items: center;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-
-  display: flex;
-  flex-flow: row;
-
-  #logo {
-    img { height: 64px; }
-    flex-grow: 1;
-  }
-}
-
 #frame {
   background-image: url("assets/frame-2.webp");
   background-size: cover;
@@ -40,6 +23,7 @@ header {
   width: 100vw;
   display: flex;
   flex-flow: row;
+  margin-top: -128px;
 
   #legend {
     align-self: end;

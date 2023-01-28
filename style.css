@@ -13,23 +13,6 @@ body {
   color: white;
 }
 
-header {
-  padding: 64px 64px 0 64px;
-  box-sizing: border-box;
-  align-items: center;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-flow: row;
-}
-header #logo {
-  flex-grow: 1;
-}
-header #logo img {
-  height: 64px;
-}
-
 #frame {
   background-image: url("assets/frame-2.webp");
   background-size: cover;
@@ -38,6 +21,7 @@ header #logo img {
   width: 100vw;
   display: flex;
   flex-flow: row;
+  margin-top: -128px;
 }
 #frame #legend {
   align-self: end;
