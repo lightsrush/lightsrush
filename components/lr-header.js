@@ -4,18 +4,27 @@ import {LitElement, html, css} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core
 export class LrHeader extends LitElement {
   static get styles() {
     return css`
-      :host {
-        padding: 64px 64px 32px;
+      .container {
         box-sizing: border-box;
         align-items: center;
         width: 100vw;
         position: sticky;
-        top: -32px;
-        height: 160px;
-        
         display: flex;
         flex-flow: row;
         z-index: 10;
+      }
+      
+      .compact {
+        padding: 16px 64px;
+        top: 0;
+        height: 96px;
+        background-color: #000;
+      }
+      
+      .title {
+        padding: 64px 64px 32px;
+        top: -32px;
+        height: 160px;
       }
 
       #fill {
@@ -50,25 +59,25 @@ export class LrHeader extends LitElement {
 
   static get properties() {
     return {
-      nav: {type: Boolean},
+      look: {type: String},
     };
   }
 
   constructor() {
     super();
-    this.nav = false;
+    this.look = "";
   }
 
   render() {
     return html`
-      <a href="/" id="logo"><img src="../assets/lights_rush_PNG.png" alt=""></a>
-      <div id="fill"></div>
-      ${this.nav ? html`
+      <div class="container ${this.look}">
+        <a href="/" id="logo"><img src="../assets/lights_rush_PNG.png" alt=""></a>
+        <div id="fill"></div>
         <div id="nav">
           <a href="/about">about us</a>
           <a href="/productions">productions</a>
         </div>
-      ` : null}
+      </div>
     `;
   }
 }

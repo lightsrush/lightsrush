@@ -10,10 +10,18 @@ body {
   border: 0;
   font-family: "Outfit Flex", sans-serif;
   overflow-x: hidden;
-  background: #000;
-  color: white;
+  background: #fff;
+  color: #000;
 }
 
 .content {
   width: 100vw;
+}
+
+h1 {
+  padding-top: 24px;
+  padding-bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
 }

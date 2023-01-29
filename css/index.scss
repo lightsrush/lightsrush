@@ -1,3 +1,7 @@
+body {
+  background-color: #000;
+}
+
 #frame {
   background-image: url("../assets/frame-2.webp");
   background-size: cover;
@@ -6,6 +10,7 @@
   display: flex;
   flex-flow: row;
   margin-top: -160px;
+  color: #fff;
 
   #legend {
     align-self: end;
