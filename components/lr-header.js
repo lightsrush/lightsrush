@@ -5,13 +5,13 @@ export class LrHeader extends LitElement {
   static get styles() {
     return css`
       :host {
-        padding: 64px 64px 0 64px;
+        padding: 64px 64px 32px;
         box-sizing: border-box;
         align-items: center;
         width: 100vw;
         position: sticky;
         top: -32px;
-        height: 128px;
+        height: 160px;
         
         display: flex;
         flex-flow: row;
@@ -22,7 +22,7 @@ export class LrHeader extends LitElement {
         flex-grow: 1;
       }
 
-      #logo a, #logo img { height: 64px; }
+      a, #logo img { height: 64px; }
       
       #nav {
         display: flex;
@@ -37,6 +37,9 @@ export class LrHeader extends LitElement {
         font-style: italic;
         text-decoration: none;
         transition: font-weight ease-in 300ms;
+
+        display: flex;
+        align-items: center;
       }
 
       #nav a:hover {
@@ -62,8 +65,8 @@ export class LrHeader extends LitElement {
       <div id="fill"></div>
       ${this.nav ? html`
         <div id="nav">
-          <a href=""><div>about us</div></a>
-          <a href=""><div>productions</div></a>
+          <a href="/about">about us</a>
+          <a href="/productions">productions</a>
         </div>
       ` : null}
     `;

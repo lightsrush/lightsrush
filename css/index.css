@@ -1,27 +1,11 @@
-@font-face {
-  font-family: "Outfit Flex";
-  src: url("assets/Outfit-VariableFont_wght.woff2") format("woff2") tech("variations"), url("assets/Outfit-VariableFont_wght.woff2") format("woff2-variations");
-  font-weight: 100 1000;
-}
-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: "Outfit Flex", sans-serif;
-  overflow-x: hidden;
-  background: #000;
-  color: white;
-}
-
 #frame {
-  background-image: url("assets/frame-2.webp");
+  background-image: url("../assets/frame-2.webp");
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-flow: row;
-  margin-top: -128px;
+  margin-top: -160px;
 }
 #frame #legend {
   align-self: end;
@@ -58,4 +42,4 @@ body {
   font-weight: 320;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
