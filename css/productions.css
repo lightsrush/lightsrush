@@ -6,9 +6,9 @@
 .content {
   width: 100vw;
   display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
+  flex-flow: column;
   justify-content: center;
+  align-items: center;
   padding-bottom: 32px;
 }
 

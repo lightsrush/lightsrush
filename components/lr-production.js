@@ -43,12 +43,13 @@ export class LrProduction extends LitElement {
             font-weight: 200;
             padding-bottom: 8px;
           }
+          
+          .nomination-prize {
+            padding-bottom: 16px;
+          }
 
           .prize {
             font-weight: 400;
-          }
-
-          .ref {
             font-style: italic;
           }
 
@@ -66,7 +67,7 @@ export class LrProduction extends LitElement {
             color: #000;
             padding: 8px 12px;
             border-radius: 24px;
-            border: 1px solid black;
+            background-color: #eee;
             text-decoration: none;
             text-transform: uppercase;
             transition: background-color ease-in 300ms;
@@ -114,7 +115,7 @@ export class LrProduction extends LitElement {
                       .map((line) => {
                           let parts = line.split(";")
                           if (parts.length === 1) return html`<div class="nomination"><span class="ref">${parts[0]}</span></div>`
-                          else return html`<div class="nomination"><span class="prize">${parts[0]}</span><br/><span class="ref">${parts[1]}</span></div>`
+                          else return html`<div class="nomination nomination-prize"><span class="prize">${parts[0]}</span><br/><span class="ref">${parts[1]}</span></div>`
                       })
                   }
               <div class="links">
