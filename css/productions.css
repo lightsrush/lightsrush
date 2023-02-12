@@ -1,0 +1,15 @@
+#frame {
+  padding: 0 64px;
+  font-size: 32px;
+}
+
+.content {
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+/*# sourceMappingURL=productions.css.map */
