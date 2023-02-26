@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Outfit Flex";
-  src: url("../assets/Outfit-VariableFont_wght.woff2") format("woff2") tech("variations"), url("../assets/Outfit-VariableFont_wght.woff2") format("woff2-variations");
+  src: url("../assets/Outfit-VariableFont_wght.woff2") format("woff2");
   font-weight: 100 1000;
 }
 body {

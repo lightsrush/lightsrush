@@ -51,8 +51,12 @@ export class LrHeader extends LitElement {
         align-items: center;
       }
 
-      #nav a:hover {
-        font-weight: 320;
+      #nav a:hover, .selected {
+        font-weight: 320 !important;
+      }
+      
+      .selected {
+        text-decoration: underline !important;
       }
     `;
   }
@@ -60,12 +64,14 @@ export class LrHeader extends LitElement {
   static get properties() {
     return {
       look: {type: String},
+      selected: {type: Number},
     };
   }
 
   constructor() {
     super();
     this.look = "";
+    this.selected = 1;
   }
 
   render() {
@@ -74,8 +80,8 @@ export class LrHeader extends LitElement {
         <a href="/" id="logo"><img src="../assets/lights_rush_PNG.png" alt=""></a>
         <div id="fill"></div>
         <div id="nav">
-          <a href="/about">about us</a>
-          <a href="/productions">productions</a>
+          <a href="/about" class="${this.selected === 1 ? "selected" : ""}">about us</a>
+          <a href="/productions" class="${this.selected === 2 ? "selected" : ""}">productions</a>
         </div>
       </div>
     `;
