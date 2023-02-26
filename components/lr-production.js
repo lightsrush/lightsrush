@@ -4,7 +4,7 @@ import {LitElement, html, css} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core
 export class LrProduction extends LitElement {
     static get styles() {
         return css`
-          :root {
+          :host {
             font-weight: 300;
           }
           
@@ -32,14 +32,20 @@ export class LrProduction extends LitElement {
           }
 
           #right {
-            padding-left: 32px;
+            padding-left: 48px;
             display: flex;
             flex-flow: column;
           }
 
           #title {
             font-size: 38px;
-            font-weight: bolder;
+            font-weight: 600;
+          }
+          
+          #title img {
+            width: 24px;
+            image-rendering: pixelated;
+            padding-right: 16px;
           }
 
           #subtitle {
@@ -127,7 +133,7 @@ export class LrProduction extends LitElement {
                     <img src="../assets/productions/${this.cover}" alt="" id="cover">
                 </div>
                 <div id="right">
-                    <div id="title">${this.title} (${this.year})</div>
+                    <div id="title"><img src="../assets/film.png">${this.title} (${this.year})</div>
                     <div id="subtitle">${this.subtitle}</div>
                     <div class="category">Synopsis</div>
                     <div id="description">${this.description}</div>
