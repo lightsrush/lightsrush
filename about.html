@@ -5,6 +5,7 @@
     <title>About | Lights Rush</title>
     <script type="module" src="/components/lr-footer.js"></script>
     <script type="module" src="/components/lr-header.js"></script>
+    <script type="module" src="/components/lr-production.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
@@ -12,51 +13,70 @@
 
 <lr-header look="compact" selected="1"></lr-header>
 
-<div id="about">
 
-<div id="pictures">
-    <div class="pic">
-        <img src="assets/nicolas.webp" alt="">
-        <div class="name">Nicolas Dozol</div>
+<div class="section section-light">
+    <div class="big-text">
+        <p>
+            Created by Nicolas Dozol and Alexander Liden,<br>
+            Lights Rush produces, directs and distributes <span class="strong">cinematographic and audiovisual creation</span>.
+        </p>
+        <div id="pictures">
+            <div class="pic">
+                <img src="assets/nicolas.webp" alt="">
+                <div class="name">Nicolas&nbsp;Dozol</div>
+            </div>
+
+            <div class="pic">
+                <img src="assets/alexander.webp" alt="">
+                <div class="name">Alexander&nbsp;Liden</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-dark">
+        <lr-production
+                cover="affichemyownlife_maj_2022_laurels.webp"
+                year="2019"
+                title="My Own Life"
+                subtitle="Short film • 15 min"
+                description="Ian is a shy and insecure teenager searching for his identity. With his only imaginary friend, he learns to discover himself and face his difficulties."
+                nominations="
+                Semi-Finalist;ART200 International Queer Film Festival (Bucarest, Romania)
+                Miracle Film Festival (Los Angeles, USA)
+            "
+                links="
+                gonella productions;https://gonella-productions.com/myownlife
+                prime video;https://www.amazon.com/My-Own-Life-Nicolas-Dozol/dp/B09Q7GPCR9
+                apple tv;https://tv.apple.com/us/movie/my-own-life/umc.cmc.35zzau4aeu2ptp6l2m2tg01bj
+                gagaoolala;https://www.gagaoolala.com/en/videos/2235/my-own-life-2019
+                dekkoo;https://www.dekkoo.com/videos/my-own-life
+                here tv;https://www.here.tv/video/my-own-life
+                filmdoo;https://www.filmdoo.com/films/my-own-life
+            "
+                compact="true"
+        ></lr-production>
+    <div class="button"><a href="/productions.html">See all our productions</a></div>
+</div>
+
+<div class="section section-light">
+
+    <div class="text">
+        <p>
+            Based in Geneva, we develop and participate in <span class="strong">international co-productions</span>.
+        </p>
+        <p>
+            We are passionate professionals, available and determined to create any form of project: Feature films, Short films, Series, Advertisings, & Events recording.
+        </p>
     </div>
 
-    <div class="pic">
-        <img src="assets/alexander.webp" alt="">
-        <div class="name">Alexander Liden</div>
-    </div>
 </div>
 
-<div class="content">
-    <p>
-        Created by Nicolas Dozol and Alexander Liden,<br>
-        Lights Rush produces, directs and distributes cinematographic and audiovisual creation.
-    </p>
-
-    <p>
-        We are passionate professionals, available and determined to create any form of project:
-    </p>
-
-    <ul>
-        <li>Feature films</li>
-        <li>Short films</li>
-        <li>Series</li>
-        <li>Advertisings</li>
-        <li>Events recording</li>
-    </ul>
-
-    <p>
-        Based in Geneva, we develop and participate in international co-productions.
-    </p>
+<div class="section section-dark">
+    <iframe src="https://player.vimeo.com/video/568088909?h=2af5ff751d" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<h1>Teaser</h1>
-
-<div id="teaser" style="position: relative;">
-    <iframe src="https://player.vimeo.com/video/568088909?h=2af5ff751d" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</div>
 <script src="https://player.vimeo.com/api/player.js"></script>
-
-</div>
 
 <lr-footer></lr-footer>
 

@@ -112,6 +112,7 @@ export class LrProduction extends LitElement {
             description: {type: String},
             nominations: {type: String},
             links: {type: String},
+            compact: {type: Boolean},
         };
     }
 
@@ -124,6 +125,7 @@ export class LrProduction extends LitElement {
         this.description = '';
         this.nominations = '';
         this.links = '';
+        this.compact = false;
     }
 
     render() {
@@ -135,8 +137,10 @@ export class LrProduction extends LitElement {
                 <div id="right">
                     <div id="title"><img src="../assets/film.png">${this.title} (${this.year})</div>
                     <div id="subtitle">${this.subtitle}</div>
+                    
                     <div class="category">Synopsis</div>
                     <div id="description">${this.description}</div>
+                    
                     <div class="category">Nominations</div>
                     ${this.nominations
                             .split("\n")
@@ -145,26 +149,29 @@ export class LrProduction extends LitElement {
                                 if (parts.length === 1 && parts[0] === "") return html``
                                 else if (parts.length === 1)
                                     return html`
-                                        <div class="nomination"><span class="ref">${parts[0]}</span></div>
-                                    `
+                                    <div class="nomination"><span class="ref">${parts[0]}</span></div>
+                                `
                                 else
                                     return html`
-                                        <div class="nomination">
-                                            <span class="prize">${parts[0]}</span><br/>
-                                            <span class="ref">${parts[1]}</span>
-                                        </div>
-                                    `
+                                    <div class="nomination">
+                                        <span class="prize">${parts[0]}</span><br/>
+                                        <span class="ref">${parts[1]}</span>
+                                    </div>
+                                `
                             })
                     }
-                    <div class="category">Watch on</div>
-                    <div class="links">
-                        ${this.links.split("\n").map((line) => {
-                            let parts = line.split(";")
-                            if (parts.length === 1) return null
-                            return html`
+                    
+                    ${this.compact ? html`` : html`
+                        <div class="category">Watch on</div>
+                        <div class="links">
+                            ${this.links.split("\n").map((line) => {
+                                let parts = line.split(";")
+                                if (parts.length === 1) return null
+                                return html`
                                 <div class="link"><a href="${parts[1]}">${parts[0]}</a></div>`
-                        })}
-                    </div>
+                            })}
+                        </div>
+                    `}
                 </div>
             </div>
         `;
