@@ -1,5 +1,5 @@
 import {LitElement, html, css} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
-
+import './lr-button.js'
 
 export class LrProduction extends LitElement {
     static get styles() {
@@ -10,7 +10,7 @@ export class LrProduction extends LitElement {
           
           #container {
             width: 850px;
-            padding: 16px;
+            padding: 32px;
 
             display: flex;
             flex-flow: row;
@@ -38,12 +38,13 @@ export class LrProduction extends LitElement {
           }
 
           #title {
-            font-size: 38px;
-            font-weight: 600;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: "Futura", sans-serif;
           }
           
           #title img {
-            width: 24px;
+            width: 28px;
             image-rendering: pixelated;
             padding-right: 16px;
           }
@@ -83,22 +84,8 @@ export class LrProduction extends LitElement {
             flex-wrap: wrap;
           }
 
-          .link {
+          lr-button {
             padding: 16px 16px 16px 0;
-          }
-
-          .link a {
-            color: #000;
-            padding: 8px 12px;
-            border-radius: 24px;
-            background-color: #eee;
-            text-decoration: none;
-            text-transform: uppercase;
-            transition: background-color ease-in 300ms;
-          }
-
-          a:hover {
-            background-color: #ddd;
           }
         `;
     }
@@ -135,7 +122,10 @@ export class LrProduction extends LitElement {
                     <img src="../assets/productions/${this.cover}" alt="" id="cover">
                 </div>
                 <div id="right">
-                    <div id="title"><img src="../assets/film.png">${this.title} (${this.year})</div>
+                    <div id="title">
+<!--                        <img src="../assets/film.png">-->
+                        ${this.title} (${this.year})
+                    </div>
                     <div id="subtitle">${this.subtitle}</div>
                     
                     <div class="category">Synopsis</div>
@@ -162,13 +152,12 @@ export class LrProduction extends LitElement {
                     }
                     
                     ${this.compact ? html`` : html`
-                        <div class="category">Watch on</div>
+                        <div class="category">Watch on:</div>
                         <div class="links">
                             ${this.links.split("\n").map((line) => {
                                 let parts = line.split(";")
                                 if (parts.length === 1) return null
-                                return html`
-                                <div class="link"><a href="${parts[1]}">${parts[0]}</a></div>`
+                                return html`<lr-button text="${parts[0]}" link="${parts[1]}"></lr-button>`
                             })}
                         </div>
                     `}

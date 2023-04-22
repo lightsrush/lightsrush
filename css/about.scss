@@ -6,18 +6,18 @@
   flex-flow: column;
   align-items: center;
 
-  &-light {
-    background-color: #fff;
-  }
-
-  &-dark {
-    background-color: #eee;
-  }
+  //&-light {
+  //  background-color: #fff;
+  //}
+  //
+  //&-dark {
+  //  background-color: #eee;
+  //}
 }
 
 .strong {
   font-weight: 550;
-  color: #c52820;
+  color: rgb(var(--accent));
 }
 
 .big-text {
@@ -86,21 +86,6 @@
 
 .button {
   padding-top: 32px;
-}
-
-.button a {
-  color: #000;
-  padding: 8px 12px;
-  border-radius: 24px;
-  background-color: #ddd;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color ease-in 300ms;
-
-
-  &:hover {
-    background-color: #ccc;
-  }
 }
 
 iframe {

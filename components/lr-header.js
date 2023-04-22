@@ -18,7 +18,7 @@ export class LrHeader extends LitElement {
         padding: 16px 64px;
         top: 0;
         height: 96px;
-        background-color: #000;
+        background-color: rgba(var(--material), 0.85);
       }
       
       .title {
@@ -58,6 +58,10 @@ export class LrHeader extends LitElement {
       .selected {
         text-decoration: underline !important;
       }
+
+      .selected {
+        text-decoration: underline !important;
+      }
     `;
   }
 
@@ -71,7 +75,7 @@ export class LrHeader extends LitElement {
   constructor() {
     super();
     this.look = "";
-    this.selected = 1;
+    this.selected = 0;
   }
 
   render() {
@@ -80,8 +84,8 @@ export class LrHeader extends LitElement {
         <a href="/" id="logo"><img src="../assets/lights_rush_PNG.png" alt=""></a>
         <div id="fill"></div>
         <div id="nav">
-          <a href="/about" class="${this.selected === 1 ? "selected" : ""}">about us</a>
-          <a href="/productions" class="${this.selected === 2 ? "selected" : ""}">productions</a>
+          <a href="/about" class="${ this.selected === 1 ? "selected" : "" }">about us</a>
+          <a href="/productions" class="${ this.selected === 2 ? "selected" : "" }">productions</a>
         </div>
       </div>
     `;
