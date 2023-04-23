@@ -21,7 +21,7 @@ export class LrButton extends LitElement {
     static get properties() {
         return {
             text: {type: String},
-            link: {type: Number},
+            link: {type: String},
         };
     }
 
