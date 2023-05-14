@@ -11,13 +11,16 @@
 </head>
 <body>
 
+    {% set section = get_section(path="productions/_index.md") %}
+    {% set last = section.pages[0] %}
+
     <div id="player">
         <lr-header ></lr-header>
         <video playsinline autoplay muted loop> <!-- poster="" -->
-            <source src="videos/last-party.webm" type="video/webm">
-            <source src="videos/last-party.mp4" type="video/mp4">
+            <source src="videos/{{ last.slug }}.webm" type="video/webm">
+            <source src="videos/{{ last.slug }}.mp4" type="video/mp4">
         </video>
-        <div id="title">13_OCT_1985_ARCHIVE</div>
+        <div id="title">{{ last.title }}</div>
     </div>
 
     <div id="controls">
@@ -31,7 +34,6 @@
 
     <div id="posters">
 
-        {% set section = get_section(path="productions/_index.md") %}
         {% for page in section.pages %}
             <lr-poster
                     title="{{ page.title }}"
