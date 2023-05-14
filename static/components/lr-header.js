@@ -7,7 +7,7 @@ export class LrHeader extends LitElement {
       .container {
         box-sizing: border-box;
         padding: 16px 64px;
-        background-color: rgba(var(--material), 0.6);
+        background-color: rgba(var(--material), var(--header-alpha));
         align-items: center;
         width: 100vw;
         position: sticky;
