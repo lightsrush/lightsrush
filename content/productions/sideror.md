@@ -7,7 +7,7 @@ date = "2021-01-02"
 year = "2021"
 duration = "short"
 directed_by = "Nicolas Dozol"
-starring = ""
+starring = "Loïse Dô, Rémi Gerard, Florence Dozol, Jean-Baptiste Desban, Charlotte Borius, Nicolas Dozol"
 links = [
     "cinesquare;https://cinesquare.net/#/movie/3357/sideror",
 ]
