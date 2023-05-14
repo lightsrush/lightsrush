@@ -7,7 +7,7 @@ date = "2019-01-01"
 year = "2019"
 duration = "short"
 directed_by = "Nicolas Dozol"
-starring = ""
+starring = "Sébastien Martel, Alexander Lichtle"
 links = [
     "gonella productions;https://gonella-productions.com/myownlife",
     "prime video;https://www.amazon.com/My-Own-Life-Nicolas-Dozol/dp/B09Q7GPCR9",
