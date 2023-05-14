@@ -7,7 +7,7 @@ date = "2021-01-01"
 year = "2021"
 duration = "short"
 directed_by = "Nicolas Dozol"
-starring = ""
+starring = "Chloé Vittenet"
 links = [
     "sofa vod;https://sofavod.com/itemShare/10379",
 ]
