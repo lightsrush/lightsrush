@@ -7,7 +7,7 @@ date = "2023-01-02"
 year = "2023"
 duration = "feature"
 directed_by = "Nicolas Dozol"
-starring = ""
+starring = "Lucie Cecchi, Rémi Gerard, Uma Condolo, Teddy Hardy"
 links = []
 festivals = []
 +++
