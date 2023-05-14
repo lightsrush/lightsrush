@@ -7,7 +7,7 @@ date = "2020-01-02"
 year = "2020"
 duration = "short"
 directed_by = "Nicolas Dozol"
-starring = ""
+starring = "Lucie Gurtler, Florence Dozol, Jean-Baptiste Desban, Nicolas Dozol"
 links = [
     "sofy.tv;https://sofy.tv/viewer/film/inside-my-mind?fbclid=IwAR164N-I_S9ATOxnhRbbV6REaU7MDQW9APqp_3vW7-jjnXPzpIGZAi4vn9w",
     "sofa vod;https://sofavod.com/itemShare/10129",
