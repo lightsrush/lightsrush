@@ -27,7 +27,6 @@
         <div class="pill" id="filter">
             <div class="filter-choice selected" id="filter-all" onclick="filter(Filter.All)">All</div>
             <div class="filter-choice" id="filter-short" onclick="filter(Filter.Short)">Shorts</div>
-            <div class="filter-choice" id="filter-long" onclick="filter(Filter.Long)">Longs</div>
             <div class="filter-choice" id="filter-feature" onclick="filter(Filter.Feature)">Features</div>
         </div>
     </div>
@@ -53,7 +52,6 @@
     const Filter = {
         All: 'All',
         Short: 'short',
-        Long: 'long',
         Feature: 'feature',
     };
 
@@ -63,7 +61,6 @@
             if (
                 f === Filter.All && choice.id === "filter-all"
                 || f === Filter.Short && choice.id === "filter-short"
-                || f === Filter.Long && choice.id === "filter-long"
                 || f === Filter.Feature && choice.id === "filter-feature"
             ) { choice.classList.add("selected"); }
 
@@ -71,7 +68,6 @@
                 if (
                     f === Filter.All
                     || poster.getAttribute("duration") === Filter.Short && f === Filter.Short
-                    || poster.getAttribute("duration") === Filter.Long && f === Filter.Long
                     || poster.getAttribute("duration") === Filter.Feature && f === Filter.Feature
                 ) {
                     poster.style.display = "block";

@@ -20,7 +20,7 @@ date = "20XX-XX-XX"
 
 [extra]
 year = "20XX"
-duration = "short|long|feature"
+duration = "short|feature"
 directed_by = ""
 starring = ""
 links = [
