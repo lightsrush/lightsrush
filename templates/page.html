@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Rush – {{ page.title }}</title>
+    <script type="module" src="../../components/lr-footer.js"></script>
+    <script type="module" src="../../components/lr-header.js"></script>
+    <script type="module" src="../../components/lr-poster.js"></script>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../production.css">
+</head>
+<body>
+
+<lr-header></lr-header>
+
+<div id="main">
+    <div id="cover">
+        <video playsinline autoplay muted loop>
+            <source src="../../videos/{{ page.slug }}.webm" type="video/webm">
+            <source src="../../videos/{{ page.slug }}.mp4" type="video/mp4">
+        </video>
+        <div id="title">{{ page.title }}</div>
+    </div>
+
+    <div id="details">
+        <div class="line">
+            <div class="cell">
+                <div class="section">Year</div>
+                <div>{{ page.year }}</div>
+            </div>
+            <div class="cell">
+                <div class="section">Watch on</div>
+                <div>
+                    {% for link in page.extra.links %}
+                        {% set l = link | split(pat=";") %}
+                        <a href="{{ l[1] }}">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+                            </svg>
+                            {{ l[0] }}
+                        </a>
+                    {% else %}
+                        <span>Coming soon!</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="line">
+            <div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Directed by</div>
+                        <div>{{ page.extra.directed_by }}</div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Starring</div>
+                        <div>{{ page.extra.starring }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line cell synopsis">
+                {{ page.content | safe }}
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="line">
+            <div class="cell">
+                <div class="section" id="festivals">Festivals</div>
+
+                {% for fv in page.extra.festivals %}
+                    {% set f = fv | split(pat=";") %}
+
+                    {% if ";" in fv %}
+                        <div class="festival"><span class="result">{{ f[0] }}</span>, {{ f[1] }}</div>
+                    {% else %}
+                        <div class=festival>{{ f[0] }}</div>
+                    {% endif %}
+                {% else %}
+                    <div class=festival>—</div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<lr-footer></lr-footer>
+
+</body>
+</html>

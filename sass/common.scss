@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Outfit Flex";
+  src: url("fonts/Outfit-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "FCM";
+  src: url("fonts/Futura Condensed Medium.woff2") format("woff");
+}
+
+body {
+  --material: 19, 19, 19;
+  --text: 236, 236, 236;
+  --accent: 148, 40, 31;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "FCM", sans-serif;
+  overflow-x: hidden;
+  color: rgb(var(--text));
+  background-color: #000;
+}
+
+.content {
+  width: 100vw;
+}
+
+h1 {
+  padding-top: 24px;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+}
+
+lr-header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}

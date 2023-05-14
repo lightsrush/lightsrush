@@ -1,4 +1,7 @@
 .idea
 
-.sass-cache/
-*.css.map
+public/
+
+zola
+
+*.zip

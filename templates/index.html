@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Rush</title>
+    <script type="module" src="components/lr-header.js"></script>
+    <script type="module" src="components/lr-footer.js"></script>
+    <script type="module" src="components/lr-poster.js"></script>
+    <link href="common.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="player">
+        <lr-header ></lr-header>
+        <video playsinline autoplay muted loop> <!-- poster="" -->
+            <source src="videos/last-party.webm" type="video/webm">
+            <source src="videos/last-party.mp4" type="video/mp4">
+        </video>
+        <div id="title">13_OCT_1985_ARCHIVE</div>
+    </div>
+
+    <div id="controls">
+        <div class="pill" id="filter">
+            <div class="filter-choice selected" id="filter-all" onclick="filter(Filter.All)">All</div>
+            <div class="filter-choice" id="filter-short" onclick="filter(Filter.Short)">Shorts</div>
+            <div class="filter-choice" id="filter-long" onclick="filter(Filter.Long)">Longs</div>
+            <div class="filter-choice" id="filter-feature" onclick="filter(Filter.Feature)">Features</div>
+        </div>
+    </div>
+
+    <div id="posters">
+
+        {% set section = get_section(path="productions/_index.md") %}
+        {% for page in section.pages %}
+            <lr-poster
+                    title="{{ page.title }}"
+                    cover="{{ page.slug }}"
+                    year="{{ page.extra.year }}"
+                    duration="{{ page.extra.duration }}"
+                    link="{{ page.path }}"
+            ></lr-poster>
+        {% endfor %}
+    </div>
+
+    <lr-footer></lr-footer>
+
+</body>
+
+<script>
+    const Filter = {
+        All: 'All',
+        Short: 'short',
+        Long: 'long',
+        Feature: 'feature',
+    };
+
+    function filter(f) {
+        document.querySelectorAll('.filter-choice').forEach(choice => {
+            choice.classList.remove("selected");
+            if (
+                f === Filter.All && choice.id === "filter-all"
+                || f === Filter.Short && choice.id === "filter-short"
+                || f === Filter.Long && choice.id === "filter-long"
+                || f === Filter.Feature && choice.id === "filter-feature"
+            ) { choice.classList.add("selected"); }
+
+            document.querySelectorAll("lr-poster").forEach(poster => {
+                if (
+                    f === Filter.All
+                    || poster.getAttribute("duration") === Filter.Short && f === Filter.Short
+                    || poster.getAttribute("duration") === Filter.Long && f === Filter.Long
+                    || poster.getAttribute("duration") === Filter.Feature && f === Filter.Feature
+                ) {
+                    poster.style.display = "block";
+                } else {
+                    poster.style.display = "none";
+                }
+            })
+        });
+    }
+</script>
+</html>
