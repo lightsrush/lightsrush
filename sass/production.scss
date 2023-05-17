@@ -1,6 +1,11 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+
 #cover {
   position: relative;
-  height: 720px;
+  min-height: 400px;
+  height: 80vh;
   overflow: hidden;
 
   video {
@@ -21,6 +26,12 @@
     bottom: 32px;
     left: 128px;
     font-size: 72px;
+
+    @include for-phone-only {
+      bottom: 28px;
+      left: 32px;
+      font-size: 38px;
+    }
   }
 }
 
@@ -29,7 +40,6 @@
   min-height: 600px;
   background-color: #222;
   font-size: 40px;
-  margin-top: -108px;
 
   #details {
     padding: 64px;
@@ -55,6 +65,13 @@
     margin-right: 16px;
     white-space: nowrap;
   }
+
+  @include for-phone-only {
+    font-size: 22px;
+    #details { padding: 16px; }
+    .section { font-size: 12px; padding-bottom: 2px; }
+    svg { width: 12px; }
+  }
 }
 
 lr-footer {
@@ -65,24 +82,44 @@ lr-footer {
   height: 1px;
   background-color: rgba(var(--text), 0.5);
   margin: 64px 0;
+
+  @include for-phone-only {
+    margin: 0 16px 16px;
+  }
 }
 
 .cell {
   padding: 0 64px;
+
+  @include for-phone-only {
+    padding: 0 16px 16px 16px;
+  }
 }
 
 .line {
   width: 100%;
   display: flex;
   flex-flow: row;
+
+  @include for-phone-only {
+    flex-flow: column;
+  }
 }
 
 .line + .line {
   padding-top: 64px;
+
+  @include for-phone-only {
+    padding-top: 0;
+  }
 }
 
 .synopsis {
   max-width: 45%;
+
+  @include for-phone-only {
+    max-width: 90%;
+  }
 }
 
 .result {

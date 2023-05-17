@@ -1,3 +1,19 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 #player {
   position: relative;
   height: 100vh;
@@ -23,6 +39,12 @@
     font-size: 92px;
     font-family: "FCM", sans-serif;
     font-weight: bold;
+
+    @include for-phone-only {
+      bottom: 28px;
+      left: 32px;
+      font-size: 38px;
+    }
   }
 }
 
@@ -88,5 +110,10 @@
   lr-poster:hover {
     padding-top: 8px;
     padding-bottom: 24px;
+  }
+
+  @include for-phone-only {
+    padding: 0 16px;
+    lr-poster { margin: 8px 16px; }
   }
 }

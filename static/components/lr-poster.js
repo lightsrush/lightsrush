@@ -13,7 +13,6 @@ export class LrPoster extends LitElement {
           }
 
           #cover {
-            height: 300px;
             margin: auto;
             padding-bottom: 8px;
           }
@@ -25,10 +24,20 @@ export class LrPoster extends LitElement {
           }
           
           #year {
+            font-size: 18px;
             font-family: "Outfit Flex", sans-serif;
             font-weight: 200;
             text-transform: uppercase;
-            font-size: 18px;
+          }
+
+          @media (max-width: 599px) {
+            #cover img { height: 180px; }
+            #title { font-size: 24px; }
+            #year { font-size: 14px; }
+          }
+          
+          @media (min-width: 600px) {
+            #cover img { height: 300px; }
           }
         `;
     }
@@ -53,8 +62,8 @@ export class LrPoster extends LitElement {
     render() {
         return html`
             <div id="container">
-                <a href="${this.link}">
-                    <img src="posters/${this.cover}.jpeg" alt="" id="cover">
+                <a href="${this.link}" id="cover">
+                    <img src="posters/${this.cover}.jpeg" alt="">
                 </a>
                 <div id="title">${this.title}</div>
                 <div id="year">${this.year}</div>

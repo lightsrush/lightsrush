@@ -28,9 +28,8 @@ export class LrHeader extends LitElement {
 
       a, #logo img { height: 64px; }
 
-      #middle {
+      #logo {
         display: flex;
-        align-items: center;
         justify-content: center;
       }
 
@@ -66,14 +65,37 @@ export class LrHeader extends LitElement {
       .social a:hover {
         background-color: rgba(255, 255, 255, 0.2);
       }
+
+      @media (max-width: 599px) {
+        .container { padding: 16px 24px; }
+        a, #logo img { height: 48px; }
+        svg { width: 16px; }
+        .social a {
+          padding: 6px;
+          width: 24px;
+          height: 24px;
+        }
+        #left { display: none; }
+        #logo { align-items: start; }
+      }
+
+      @media (min-width: 600px) {
+        #left { display: none; }
+        #logo { align-items: start; }
+      }
+
+      @media (min-width: 900px) {
+        #left { display: block; }
+        #logo { align-items: center; }
+      }
     `;
   }
 
   render() {
     return html`
       <div class="container">
-        <div></div>
-        <div id="middle"><a href="/" id="logo"><img src="../../logo.png" alt=""></a></div>
+        <div id="left"></div>
+        <a href="/" id="logo"><img src="../../logo.png" alt=""></a>
         <div id="right" class="social">
           <a href="https://www.instagram.com/lightsrush/">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

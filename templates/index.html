@@ -8,6 +8,7 @@
     <script type="module" src="components/lr-poster.js"></script>
     <link href="common.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
     {% set last = section.pages[0] %}
 
     <div id="player">
-        <lr-header ></lr-header>
+        <lr-header></lr-header>
         <video playsinline autoplay muted loop> <!-- poster="" -->
             <source src="videos/{{ last.slug }}.webm" type="video/webm">
             <source src="videos/{{ last.slug }}.mp4" type="video/mp4">
