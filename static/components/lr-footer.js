@@ -27,7 +27,7 @@ export class LrFooter extends LitElement {
 
   render() {
     return html`
-      <div id="copyright">Copyright © 2023 lightsrush.com</div>
+      <div id="copyright">Copyright © 2024 lightsrush.com</div>
     `;
   }
 }
