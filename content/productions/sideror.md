@@ -10,6 +10,7 @@ directed_by = "Nicolas Dozol"
 starring = "Loïse Dô, Rémi Gerard, Florence Dozol, Jean-Baptiste Desban, Charlotte Borius, Nicolas Dozol"
 links = [
     "cinesquare;https://cinesquare.net/#/movie/3357/sideror",
+    "vidafair;https://vidafair.com/video/sideror",
 ]
 festivals = [
     "Semi-Finalist;Tokyo Shorts (Japan)",

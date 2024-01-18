@@ -9,10 +9,13 @@ duration = "short"
 directed_by = "Nicolas Dozol"
 starring = "Sébastien Martel, Alexander Lichtle"
 links = [
-    "gonella productions;https://gonella-productions.com/myownlife",
-    "prime video;https://www.amazon.com/My-Own-Life-Nicolas-Dozol/dp/B09Q7GPCR9",
     "apple tv;https://tv.apple.com/us/movie/my-own-life/umc.cmc.35zzau4aeu2ptp6l2m2tg01bj",
+    "prime video;https://www.amazon.com/My-Own-Life-Nicolas-Dozol/dp/B09Q7GPCR9",
+    "vidafair;https://vidafair.com/video/my-own-life",
+    "revry;https://watch.revry.tv/details/38976-my-own-life?lang=en",
     "gagaoolala;https://www.gagaoolala.com/en/videos/2235/my-own-life-2019",
+    "gaiar;https://www.gaiar.com/en/media/0kY2yV18EbGy",
+    "gonella productions;https://gonella-productions.com/myownlife",
     "dekkoo;https://www.dekkoo.com/videos/my-own-life",
     "here tv;https://www.here.tv/video/my-own-life",
     "filmdoo;https://www.filmdoo.com/films/my-own-life",
