@@ -1,10 +1,10 @@
 +++
 title = "Last Party"
 slug = "last-party"
-date = "2023-01-02"
+date = "2024-01-01"
 
 [extra]
-year = "2023"
+year = "2024"
 duration = "feature"
 directed_by = "Nicolas Dozol"
 starring = "Lucie Cecchi, Rémi Gerard, Uma Condolo, Teddy Hardy"
