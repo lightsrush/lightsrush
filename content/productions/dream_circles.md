@@ -10,7 +10,6 @@ duration = "short"
 directed_by = "Nicolas Dozol"
 starring = ""
 links = [
-    "vertifilms;https://www.vertifilms.com/film/dream-circles",
 ]
 festivals = [
     "Best Art Direction;Vertifilms Prague (Czech Republic)",
