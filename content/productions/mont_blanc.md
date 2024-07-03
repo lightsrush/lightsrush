@@ -9,7 +9,6 @@ duration = "short"
 directed_by = "Nicolas Dozol"
 starring = "Chloé Vittenet"
 links = [
-    "sofa vod;https://sofavod.com/itemShare/10379",
 ]
 festivals = [
     "Finalist;OtherMovie Lugano Film Festival (Switzerland)",
