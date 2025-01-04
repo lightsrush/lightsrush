@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Rush – Mont Blanc</title>
+    <script type="module" src="../../components/lr-footer.js"></script>
+    <script type="module" src="../../components/lr-header.js"></script>
+    <script type="module" src="../../components/lr-poster.js"></script>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<lr-header></lr-header>
+
+<div id="main">
+    <div id="cover">
+        <video playsinline autoplay muted loop>
+            <source src="../../videos/mont-blanc.webm" type="video/webm">
+            <source src="../../videos/mont-blanc.mp4" type="video/mp4">
+        </video>
+        <div id="title">Mont Blanc</div>
+    </div>
+
+    <div id="details">
+        <div class="line">
+            <div class="cell">
+                <div class="section">Year</div>
+                <div>2021</div>
+            </div>
+            <div class="cell">
+                <div class="section">Watch on</div>
+                <div>
+                    
+                        <span>Coming soon!</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="line">
+            <div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Directed by</div>
+                        <div>Nicolas Dozol</div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Starring</div>
+                        <div>Chloé Vittenet</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line cell synopsis">
+                <p>A trip to 5000 at meters of altitude by helicopter crossing the Alps mountain range,
+accompanied by the poem « Mont Blanc » from Percy Shelley.</p>
+
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="line">
+            <div class="cell">
+                <div class="section" id="festivals">Festivals</div>
+
+                
+                    
+
+                    
+                        <div class="festival"><span class="result">Finalist</span>, OtherMovie Lugano Film Festival (Switzerland)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Green Mountain International Film festival (Vermont, USA)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Golden Tree International Documentary Festival (Frankfurt, Germany)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Green Bay Film Festival (Wisconsin, USA)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Lift-Off Global Network (London, UK)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>The Monkey Bread Tree Film Awards (London, UK)</div>
+                    
+                
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<lr-footer></lr-footer>
+
+</body>
+<script>
+    window.addEventListener(`scroll`, function () {
+        const scroll = this.scrollY;
+        const style = document.querySelector(':root').style;
+        const value = Math.min(scroll / 500, 0.65)
+        style.setProperty("--header-alpha", value.toString());
+    });
+</script>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Rush – Inside My Mind</title>
+    <script type="module" src="../../components/lr-footer.js"></script>
+    <script type="module" src="../../components/lr-header.js"></script>
+    <script type="module" src="../../components/lr-poster.js"></script>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<lr-header></lr-header>
+
+<div id="main">
+    <div id="cover">
+        <video playsinline autoplay muted loop>
+            <source src="../../videos/inside-my-mind.webm" type="video/webm">
+            <source src="../../videos/inside-my-mind.mp4" type="video/mp4">
+        </video>
+        <div id="title">Inside My Mind</div>
+    </div>
+
+    <div id="details">
+        <div class="line">
+            <div class="cell">
+                <div class="section">Year</div>
+                <div>2020</div>
+            </div>
+            <div class="cell">
+                <div class="section">Watch on</div>
+                <div>
+                    
+                        
+                        <a href="https:&#x2F;&#x2F;sofy.tv&#x2F;viewer&#x2F;film&#x2F;inside-my-mind?fbclid=IwAR164N-I_S9ATOxnhRbbV6REaU7MDQW9APqp_3vW7-jjnXPzpIGZAi4vn9w">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+                            </svg>
+                            sofy.tv
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="line">
+            <div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Directed by</div>
+                        <div>Nicolas Dozol</div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Starring</div>
+                        <div>Lucie Gurtler, Florence Dozol, Jean-Baptiste Desban, Nicolas Dozol</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line cell synopsis">
+                <p>Michael wakes up from a nightmare surrounded by his three friends, Sarah, Zach and Katie.
+They are on holiday in a mountain chalet.
+Michael is feeling weird, he's having visions.
+In the evening, a power cut occurs, then strange events begin.</p>
+
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="line">
+            <div class="cell">
+                <div class="section" id="festivals">Festivals</div>
+
+                
+                    
+
+                    
+                        <div class="festival"><span class="result">Best Thriller Award</span>, Hollywood Blood Horror Festival (Los Angeles, USA)</div>
+                    
+                
+                    
+
+                    
+                        <div class="festival"><span class="result">Semi-Finalist</span>, Cannes International Independent Film Festival (France)</div>
+                    
+                
+                    
+
+                    
+                        <div class="festival"><span class="result">Semi-Finalist</span>, European Cinematography Awards (Amsterdam)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Columbia Film Festival &#x2F; Columbia Festival of the Arts (Maryland, USA)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Festival Cinématographique International de Montréal (Canada)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Kansas International Film Festival (Kansas City, USA)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>The Monkey Bread Tree Film Awards (London, UK)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Golden Short Film Festival (Rome, Italy)</div>
+                    
+                
+                    
+
+                    
+                        <div class=festival>Cortomontagna Premio Leggimontagna (Udine, Italy)</div>
+                    
+                
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<lr-footer></lr-footer>
+
+</body>
+<script>
+    window.addEventListener(`scroll`, function () {
+        const scroll = this.scrollY;
+        const style = document.querySelector(':root').style;
+        const value = Math.min(scroll / 500, 0.65)
+        style.setProperty("--header-alpha", value.toString());
+    });
+</script>
+</html>

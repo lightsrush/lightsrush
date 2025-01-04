@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Rush – Last Party</title>
+    <script type="module" src="../../components/lr-footer.js"></script>
+    <script type="module" src="../../components/lr-header.js"></script>
+    <script type="module" src="../../components/lr-poster.js"></script>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<lr-header></lr-header>
+
+<div id="main">
+    <div id="cover">
+        <video playsinline autoplay muted loop>
+            <source src="../../videos/last-party.webm" type="video/webm">
+            <source src="../../videos/last-party.mp4" type="video/mp4">
+        </video>
+        <div id="title">Last Party</div>
+    </div>
+
+    <div id="details">
+        <div class="line">
+            <div class="cell">
+                <div class="section">Year</div>
+                <div>2024</div>
+            </div>
+            <div class="cell">
+                <div class="section">Watch on</div>
+                <div>
+                    
+                        <span>Coming soon!</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="line">
+            <div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Directed by</div>
+                        <div>Nicolas Dozol</div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Starring</div>
+                        <div>Lucie Cecchi, Rémi Gerard, Uma Condolo, Teddy Hardy</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line cell synopsis">
+                <p>During a graduation party, Angela, Alexander, Lily and Ethan, four teenagers in the midst of an existential crisis,
+are confronted with their angst.
+When the four of them find themselves locked up, they wonder if it might be their last night.</p>
+
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="line">
+            <div class="cell">
+                <div class="section" id="festivals">Festivals</div>
+
+                
+                    <div class=festival>—</div>
+                
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<lr-footer></lr-footer>
+
+</body>
+<script>
+    window.addEventListener(`scroll`, function () {
+        const scroll = this.scrollY;
+        const style = document.querySelector(':root').style;
+        const value = Math.min(scroll / 500, 0.65)
+        style.setProperty("--header-alpha", value.toString());
+    });
+</script>
+</html>
