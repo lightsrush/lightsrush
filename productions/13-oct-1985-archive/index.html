@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Rush – 13_OCT_1985_ARCHIVE</title>
+    <script type="module" src="../../components/lr-footer.js"></script>
+    <script type="module" src="../../components/lr-header.js"></script>
+    <script type="module" src="../../components/lr-poster.js"></script>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<lr-header></lr-header>
+
+<div id="main">
+    <div id="cover">
+        <video playsinline autoplay muted loop>
+            <source src="../../videos/13-oct-1985-archive.webm" type="video/webm">
+            <source src="../../videos/13-oct-1985-archive.mp4" type="video/mp4">
+        </video>
+        <div id="title">13_OCT_1985_ARCHIVE</div>
+    </div>
+
+    <div id="details">
+        <div class="line">
+            <div class="cell">
+                <div class="section">Year</div>
+                <div>2023</div>
+            </div>
+            <div class="cell">
+                <div class="section">Watch on</div>
+                <div>
+                    
+                        <span>Coming soon!</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="line">
+            <div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Directed by</div>
+                        <div>Nicolas Dozol, Jean-Baptiste Desban</div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="cell">
+                        <div class="section">Starring</div>
+                        <div>Evelyn Ariza, Jean-Baptiste Desban, Nicolas Dozol</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line cell synopsis">
+                <p>Viewing of a recovered unclassified archive dated October 13, 1985.</p>
+
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="line">
+            <div class="cell">
+                <div class="section" id="festivals">Festivals</div>
+
+                
+                    <div class=festival>—</div>
+                
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<lr-footer></lr-footer>
+
+</body>
+<script>
+    window.addEventListener(`scroll`, function () {
+        const scroll = this.scrollY;
+        const style = document.querySelector(':root').style;
+        const value = Math.min(scroll / 500, 0.65)
+        style.setProperty("--header-alpha", value.toString());
+    });
+</script>
+</html>
