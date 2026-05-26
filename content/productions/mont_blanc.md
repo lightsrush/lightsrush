@@ -9,6 +9,7 @@ duration = "short"
 directed_by = "Nicolas Dozol"
 starring = "Chloé Vittenet"
 links = [
+    "vimeo;https://vimeo.com/1195626715/9bdf0c6955",
 ]
 festivals = [
     "Finalist;OtherMovie Lugano Film Festival (Switzerland)",

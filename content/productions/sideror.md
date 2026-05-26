@@ -9,6 +9,7 @@ duration = "short"
 directed_by = "Nicolas Dozol"
 starring = "Loïse Dô, Rémi Gerard, Florence Dozol, Jean-Baptiste Desban, Charlotte Borius, Nicolas Dozol"
 links = [
+    "prime video;https://www.primevideo.com/detail/Sideror/0PNY2JTKPQNZUX3RBF4YL368HR",
     "cinesquare;https://cinesquare.net/#/movie/3357/sideror",
     "vidafair;https://vidafair.com/video/sideror",
 ]

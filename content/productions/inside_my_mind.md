@@ -10,6 +10,8 @@ directed_by = "Nicolas Dozol"
 starring = "Lucie Gurtler, Florence Dozol, Jean-Baptiste Desban, Nicolas Dozol"
 links = [
     "sofy.tv;https://sofy.tv/viewer/film/inside-my-mind?fbclid=IwAR164N-I_S9ATOxnhRbbV6REaU7MDQW9APqp_3vW7-jjnXPzpIGZAi4vn9w",
+    "fawesome;https://fawesome.tv/movies/10708334/inside-my-mind",
+    "shortly;https://watch.shortly.film/asset/inside-my-mind",
 ]
 festivals = [
     "Best Thriller Award;Hollywood Blood Horror Festival (Los Angeles, USA)",
