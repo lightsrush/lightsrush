@@ -1,7 +1,26 @@
-.idea
+node_modules
 
-public/
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
 
-zola
+# OS
+.DS_Store
+Thumbs.db
 
-*.zip
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# webstorm
+.idea/

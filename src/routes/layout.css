@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+    themes: black --default --prefersdark;
+}
+@plugin "daisyui/theme" {
+    name: "black";
+    default: true;
+    prefersdark: true;
+    --radius-selector: 1rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+}
+
+@font-face {
+    font-family: "Outfit Flex";
+    src: url("/fonts/Outfit-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 1000;
+}
+
+@font-face {
+    font-family: "FCM";
+    src: url("/fonts/Futura Condensed Medium.woff2") format("woff2");
+}
+
+:root {
+    font-family: "Outfit Flex",  sans-serif;
+}
+
+.futura {
+    font-family: "FCM", sans-serif;
+}

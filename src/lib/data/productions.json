@@ -1,0 +1,208 @@
+[
+  {
+    "title": "My Own Life",
+    "slug": "my-own-life",
+    "date": "2019-01-01",
+    "description": "Ian is a shy and insecure teenager searching for his identity. With his only imaginary friend, he learns to discover himself and face his difficulties.",
+    "year": "2019",
+    "duration": "short",
+    "directedBy": [
+      "Nicolas Dozol"
+    ],
+    "starring": [
+      "Sébastien Martel",
+      "Alexander Lichtle"
+    ],
+    "cover": "",
+    "watch_on": [
+      { "platform": "apple tv", "link": "https://tv.apple.com/us/movie/my-own-life/umc.cmc.35zzau4aeu2ptp6l2m2tg01bj" },
+      { "platform": "prime video",  "link": "https://www.amazon.com/My-Own-Life-Nicolas-Dozol/dp/B09Q7GPCR9" },
+      { "platform": "vidafair",  "link": "https://vidafair.com/video/my-own-life" },
+      { "platform": "fawesome",  "link": "https://fawesome.tv/movies/10679035/my-own-life" },
+      { "platform": "gagaoolala",  "link": "https://www.gagaoolala.com/en/videos/2235/my-own-life-2019" },
+      { "platform": "filmdoo",  "link": "https://www.filmdoo.com/films/my-own-life" }
+    ],
+    "festivals": [
+      {
+        "name": "ART200 International Queer Film Festival (Bucarest, Romania)",
+        "reward": "Semi-Finalist"
+      },
+      {
+        "name": "Miracle Film Festival (Los Angeles, USA)"
+      }
+    ]
+  },
+  {
+    "title": "Dream Circles",
+    "slug": "dream-circles",
+    "date": "2020-01-01",
+    "description": "A young man goes to bed and has a nightmare that becomes a dream.",
+    "year": "2020",
+    "duration": "short",
+    "directedBy": [
+      "Nicolas Dozol"
+    ],
+    "starring": [],
+    "cover": "dream_cirlces_labels-copie-1.webp",
+    "watch_on": [
+      { "platform": "vimeo",  "link": "https://vimeo.com/1195620687/ef3ff7fc06" }
+    ],
+    "festivals": [
+      { "name": "Vertifilms Prague (Czech Republic)", "reward": "Best Art Direction" },
+      { "name": "!Flick! (North Carolina, USA)" },
+      { "name": "VerticalMovie Festival (Roma, Italy)" },
+      { "name": "Rencontres du Court-Métrage Annemasse (France)" },
+      { "name": "FLICKFAIR (Los Angeles, USA)" }
+    ]
+  },
+  {
+    "title": "Inside My Mind",
+    "slug": "inside-my-mind",
+    "date": "2020-01-02",
+    "description": "Michael wakes up from a nightmare surrounded by his three friends, Sarah, Zach and Katie. They are on holiday in a mountain chalet. Michael is feeling weird, he's having visions. In the evening, a power cut occurs, then strange events begin.",
+    "year": "2020",
+    "duration": "short",
+    "directedBy": [
+      "Nicolas Dozol"
+    ],
+    "starring": [
+      "Lucie Gurtler",
+      "Florence Dozol",
+      "Jean-Baptiste Desban",
+      "Nicolas Dozol"
+    ],
+    "cover": "",
+    "watch_on": [
+      { "platform": "sofy.tv",  "link": "https://sofy.tv/viewer/film/inside-my-mind?fbclid=IwAR164N-I_S9ATOxnhRbbV6REaU7MDQW9APqp_3vW7-jjnXPzpIGZAi4vn9w" },
+      { "platform": "fawesome",  "link": "https://fawesome.tv/movies/10708334/inside-my-mind" },
+      { "platform": "shortly",  "link": "https://watch.shortly.film/asset/inside-my-mind" }
+    ],
+    "festivals": [
+      { "name": "Hollywood Blood Horror Festival (Los Angeles, USA)", "reward": "Best Thriller Award" },
+      { "name": "Cannes International Independent Film Festival (France)", "reward": "Semi-Finalist" },
+      { "name": "European Cinematography Awards (Amsterdam)", "reward": "Semi-Finalist" },
+      { "name": "Columbia Film Festival / Columbia Festival of the Arts (Maryland, USA)" },
+      { "name": "Festival Cinématographique International de Montréal (Canada)" },
+      { "name": "Kansas International Film Festival (Kansas City, USA)" },
+      { "name": "The Monkey Bread Tree Film Awards (London, UK)" },
+      { "name": "Golden Short Film Festival (Rome, Italy)" },
+      { "name": "Cortomontagna Premio Leggimontagna (Udine, Italy)" }
+    ]
+  },
+  {
+    "title": "Mont Blanc",
+    "slug": "mont-blanc",
+    "date": "2021-01-01",
+    "description": "A trip to 5000 at meters of altitude by helicopter crossing the Alps mountain range, accompanied by the poem « Mont Blanc » from Percy Shelley.",
+    "year": "2021",
+    "duration": "short",
+    "directedBy": [
+      "Nicolas Dozol"
+    ],
+    "starring": [
+      "Chloé Vittenet"
+    ],
+    "cover": "",
+    "watch_on": [
+      { "platform": "vimeo",  "link": "https://vimeo.com/1195626715/9bdf0c6955" }
+    ],
+    "festivals": [
+      { "name": "OtherMovie Lugano Film Festival (Switzerland)", "reward": "Finalist" },
+      { "name": "Green Mountain International Film festival (Vermont, USA)" },
+      { "name": "Golden Tree International Documentary Festival (Frankfurt, Germany)" },
+      { "name": "Green Bay Film Festival (Wisconsin, USA)" },
+      { "name": "Lift-Off Global Network (London, UK)" },
+      { "name": "The Monkey Bread Tree Film Awards (London, UK)" }
+    ]
+  },
+  {
+    "title": "Sideror",
+    "slug": "sideror",
+    "date": "2021-01-02",
+    "description": "A manager launches an experimental choreography that brings together various individuals suffering from mental illness. The dance quickly becomes a therapy that allows them to express themselves and to introspect on their repressed fantasies and fears.",
+    "year": "2021",
+    "duration": "short",
+    "directedBy": [
+      "Nicolas Dozol"
+    ],
+    "starring": [
+      "Loïse Dô",
+      "Rémi Gerard",
+      "Florence Dozol",
+      "Jean-Baptiste Desban",
+      "Charlotte Borius",
+      "Nicolas Dozol"
+    ],
+    "cover": "",
+    "watch_on": [
+      { "platform": "prime video",  "link": "https://www.primevideo.com/detail/Sideror/0PNY2JTKPQNZUX3RBF4YL368HR" },
+      { "platform": "cinesquare",  "link": "https://cinesquare.net/#/movie/3357/sideror" },
+      { "platform": "vidafair",  "link": "https://vidafair.com/video/sideror" }
+    ],
+    "festivals": [
+      { "name": "Tokyo Shorts (Japan)", "reward": "Semi-Finalist" },
+      { "name": "Cannes International Independent Film Festival (France)", "reward": "Semi-Finalist" },
+      { "name": "Berlin Shorts (Germany)", "reward": "Semi-Finalist" },
+      { "name": "Hong Kong Indie Film Festival (Hong Kong)", "reward": "Semi-Finalist" },
+      { "name": "Open Screen Club Paris (France)" },
+      { "name": "Jugendfilm Festival « Movie Day » (Switzerland)" },
+      { "name": "Asheville Fringe Arts Festival (North Carolina, USA)" },
+      { "name": "BOTA Sealy: Art and Film Festival (Sealy, Texas, USA)" },
+      { "name": "Lift-Off Global Network (London, UK)" },
+      { "name": "Open Vision Film Fest (Moscow, Russia)" },
+      { "name": "One Earth Awards (Bengaluru, India)" }
+    ]
+  },
+  {
+    "title": "13_OCT_1985_ARCHIVE",
+    "slug": "13-oct-1985-archive",
+    "date": "2023-01-01",
+    "description": "Viewing of a recovered unclassified archive dated October 13, 1985.",
+    "year": "2023",
+    "duration": "short",
+    "directedBy": [
+      "Nicolas Dozol",
+      "Jean-Baptiste Desban"
+    ],
+    "starring": [
+      "Evelyn Ariza",
+      "Jean-Baptiste Desban",
+      "Nicolas Dozol"
+    ],
+    "cover": "",
+    "watch_on": [
+      { "platform": "vimeo",  "link": "https://vimeo.com/1195631061/f23162836a" }
+    ],
+    "festivals": []
+  },
+  {
+    "title": "Last Party",
+    "slug": "last-party",
+    "date": "2024-01-01",
+    "description": "During a graduation party, Angela, Alexander, Lily and Ethan, four teenagers in the midst of an existential crisis, are confronted with their angst. When the four of them find themselves locked up, they wonder if it might be their last night.",
+    "year": "2024",
+    "duration": "feature",
+    "directedBy": [
+      "Nicolas Dozol"
+    ],
+    "starring": [
+      "Lucie Cecchi",
+      "Rémi Gerard",
+      "Uma Condolo",
+      "Teddy Hardy"
+    ],
+    "cover": "",
+    "trailer": "https://www.youtube.com/watch?v=YnDIY23LKUE",
+    "watch_on": [
+      { "platform": "apple tv",  "link": "https://tv.apple.com/ca/movie/last-party/umc.cmc.5q46r0jtq36nrryfio7v3t5mv" },
+      { "platform": "amazon",  "link": "https://www.amazon.com/gp/video/detail/0TQ0TNWWVTGEMI94J6CK09SG25" },
+      { "platform": "vudu",  "link": "https://www.vudu.com/content/browse/details/Last-Party/3188261" },
+      { "platform": "tubi",  "link": "https://tubitv.com/movies/100053056" },
+      { "platform": "plex",  "link": "https://watch.plex.tv/fr/movie/last-party" },
+      { "platform": "darkroom",  "link": "https://www.darkroom.film/content?video_id=762&video_type=1" },
+      { "platform": "fawesome",  "link": "https://fawesome.tv/movies/10613398/last-party" },
+      { "platform": "hoopla",  "link": "https://www.hoopladigital.com/title/16791343" }
+    ],
+    "festivals": []
+  }
+]
